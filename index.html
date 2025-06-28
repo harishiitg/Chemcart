@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChemCart – Your Online Chemical Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/chemcart-logo.png">
+</head>
+<body>
+    <!-- Top Info Bar -->
+    <div class="top-info-bar">
+        <div class="info-left">
+            <img src="assets/used logo.png" alt="ChemCart Logo" class="logo-img">
+            <span class="brand-title">CHEMCART</span>
+        </div>
+        <div class="info-center">
+            <span class="info-item"><span class="icon">📍</span> Location: IIT Guwahati</span>
+            <span class="info-item"><span class="icon">✉️</span> Mail: iitg@gmail.com</span>
+            <span class="info-item"><span class="icon">📞</span> Call: 9871440703</span>
+        </div>
+    </div>
+
+    <!-- Modern Navbar -->
+    <nav class="modern-navbar">
+        <ul class="nav-list">
+            <li class="nav-item active">Home</li>
+            <li class="nav-item dropdown">Pages ▼
+                <ul class="dropdown-menu">
+                    <li>About Us</li>
+                    <li>FAQ</li>
+                    <li>Careers</li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">Services ▼
+                <ul class="dropdown-menu">
+                    <li>Track Order</li>
+                    <li>Labelling</li>
+                    <li>Custom Synthesis</li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">Elements ▼
+                <ul class="dropdown-menu">
+                    <li>Periodic Table</li>
+                    <li>Lab Equipment</li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">Blog ▼
+                <ul class="dropdown-menu">
+                    <li>Latest News</li>
+                    <li>Research Highlights</li>
+                </ul>
+            </li>
+            <li class="nav-item">Contact Us</li>
+        </ul>
+        <div class="nav-actions">
+            <span class="search-icon" id="open-search">🔍</span>
+            <div class="categories-dropdown">
+                <button class="categories-btn" id="open-categories" aria-haspopup="true" aria-expanded="false">
+                    Categories <span class="dots-icon">&#8942;</span>
+                </button>
+                <ul class="categories-menu" id="categories-menu">
+                    <li>Lab Chemicals</li>
+                    <li>Acid & Solvents</li>
+                    <li>Deodorised Hydrocarbon</li>
+                    <li>Microbiology</li>
+                    <li>Plant Tissue Culture</li>
+                    <li>Cleaning Chemicals</li>
+                    <li>Applications</li>
+                    <li>Speciality Chemicals</li>
+                    <li>More</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="search-modal">
+        <div class="search-modal-content">
+            <span class="close-search" id="close-search">&times;</span>
+            <div class="search-modal-header">
+                <img src="assets/used logo.jpg" alt="ChemCart Logo" class="modal-logo">
+                <h2 class="modal-title">CHEMCART</h2>
+                <div class="modal-tagline">Find chemicals, reagents, services, and more…</div>
+            </div>
+            <form class="search-bar-modal">
+                <input type="text" placeholder="Search for chemicals, services, info..." autofocus>
+                <button type="submit">🔍</button>
+            </form>
+            <div class="search-suggestions">
+                <div class="popular-label">Popular:</div>
+                <div class="popular-tags">
+                    <span class="tag">Ethanol</span>
+                    <span class="tag">Sulfuric Acid</span>
+                    <span class="tag">Track Order</span>
+                    <span class="tag">Custom Synthesis</span>
+                </div>
+                <div class="custom-request">No results? <a href="#" class="request-link">Request a custom chemical</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero/Banner Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <span class="hero-label">RESEARCH & SOLUTIONS</span>
+            <h1>Welcome to ChemCart – Your Official Chemical Store</h1>
+            <p>Supplying quality chemicals, reagents, and lab essentials for research, education, and industry. Trusted by professionals and institutions nationwide.</p>
+            <button class="learn-more-btn">Learn More</button>
+        </div>
+        <div class="hero-image">
+            <img src="assets/chemicals.jpg" alt="Lab Research">
+        </div>
+    </section>
+
+    <!-- Product Catalog & Filters -->
+    <section class="catalog-section">
+        <div class="filter-corner">
+            <img src="https://cdn-icons-png.flaticon.com/512/54/54741.png" alt="Filter" title="Filter" style="width:32px;height:32px;cursor:pointer;">
+        </div>
+        <div class="product-catalog">
+            <h2>Featured Chemicals</h2>
+            <div class="products-grid">
+                <!-- First row: 4 products, each from a different category -->
+                <div class="product-card">
+                    <img src="assets/sodium chloride.jpg" alt="Sodium Chloride">
+                    <h4>Sodium Chloride</h4>
+                    <p>Category: Lab Chemicals</p>
+                    <p>CAS: 7647-14-5</p>
+                    <p>Formula: NaCl</p>
+                    <p>MW: 58.44 g/mol</p>
+                    <p class="price">Price: ₹90</p>
+                    <a href="#" download>SDS ⬇️</a>
+                    <label>Quantity
+                        <select>
+                            <option>100g</option>
+                            <option>500g</option>
+                            <option>1kg</option>
+                        </select>
+                    </label>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="assets/acetic acid.jpg" alt="Acetic Acid">
+                    <h4>Acetic Acid</h4>
+                    <p>Category: Acid & Solvents</p>
+                    <p>CAS: 64-19-7</p>
+                    <p>Formula: CH3COOH</p>
+                    <p>MW: 60.05 g/mol</p>
+                    <p class="price">Price: ₹120</p>
+                    <a href="#" download>SDS ⬇️</a>
+                    <label>Quantity
+                        <select>
+                            <option>100ml</option>
+                            <option>500ml</option>
+                            <option>1L</option>
+                        </select>
+                    </label>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="assets/n hexane.jpg" alt="n-Hexane">
+                    <h4>n-Hexane</h4>
+                    <p>Category: Deodorised Hydrocarbon</p>
+                    <p>CAS: 110-54-3</p>
+                    <p>Formula: C6H14</p>
+                    <p>MW: 86.18 g/mol</p>
+                    <p class="price">Price: ₹210</p>
+                    <a href="#" download>SDS ⬇️</a>
+                    <label>Quantity
+                        <select>
+                            <option>100ml</option>
+                            <option>500ml</option>
+                            <option>1L</option>
+                        </select>
+                    </label>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="assets/nutrient agar.jpg" alt="Nutrient Agar">
+                    <h4>Nutrient Agar</h4>
+                    <p>Category: Microbiology</p>
+                    <p>CAS: 9002-18-0</p>
+                    <p>Formula: -</p>
+                    <p>MW: -</p>
+                    <p class="price">Price: ₹350</p>
+                    <a href="#" download>SDS ⬇️</a>
+                    <label>Quantity
+                        <select>
+                            <option>100g</option>
+                            <option>500g</option>
+                        </select>
+                    </label>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <hr class="product-divider">
+            <div class="products-grid">
+                <!-- Second row: 4 products, each from a different category -->
+                <div class="product-card">
+                    <img src="assets/kit.webp" alt="Educational Chemistry Kit">
+                    <h4>Educational Chemistry Kit</h4>
+                    <p>Category: Kits</p>
+                    <p>Includes: Safe acids, bases, indicators</p>
+                    <p>For: Schools/Colleges</p>
+                    <p class="price">Price: ₹500</p>
+                    <a href="#" download>Manual ⬇️</a>
+                    <label>Quantity
+                        <select>
+                            <option>1 kit</option>
+                            <option>5 kits</option>
+                        </select>
+                    </label>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="assets/ethanol.jpg" alt="Ethanol">
+                    <h4>Ethanol</h4>
+                    <p>Category: Cleaning Chemicals</p>
+                    <p>CAS: 64-17-5</p>
+                    <p>Formula: C2H5OH</p>
+                    <p>MW: 46.07 g/mol</p>
+                    <p class="price">Price: ₹250</p>
+                    <a href="#" download>SDS ⬇️</a>
+                    <label>Quantity
+                        <select>
+                            <option>100ml</option>
+                            <option>500ml</option>
+                            <option>1L</option>
+                        </select>
+                    </label>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="assets/silver nitrate.jpg" alt="Silver Nitrate">
+                    <h4>Silver Nitrate</h4>
+                    <p>Category: Applications</p>
+                    <p>CAS: 7761-88-8</p>
+                    <p>Formula: AgNO3</p>
+                    <p>MW: 169.87 g/mol</p>
+                    <p class="price">Price: ₹350</p>
+                    <a href="#" download>SDS ⬇️</a>
+                    <label>Quantity
+                        <select>
+                            <option>10g</option>
+                            <option>50g</option>
+                        </select>
+                    </label>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="assets/edta.jpg" alt="EDTA">
+                    <h4>EDTA</h4>
+                    <p>Category: Speciality Chemicals</p>
+                    <p>CAS: 60-00-4</p>
+                    <p>Formula: C10H16N2O8</p>
+                    <p>MW: 292.24 g/mol</p>
+                    <p class="price">Price: ₹280</p>
+                    <a href="#" download>SDS ⬇️</a>
+                    <label>Quantity
+                        <select>
+                            <option>100g</option>
+                            <option>500g</option>
+                        </select>
+                    </label>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination Bar -->
+    <div class="pagination-bar">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">4</button>
+        <button class="page-btn">5</button>
+        <button class="page-btn">&gt;&gt;</button>
+        <button class="page-btn last">Last</button>
+    </div>
+
+    <!-- Feature Row -->
+    <section class="feature-row">
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="assets/convenience.webp" alt="Convenience">
+            </div>
+            <div class="feature-content">
+                <h3>Convenience</h3>
+                <p>Shop products from multiple brands in a single order.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="assets/trust.jpg" alt="Trust">
+            </div>
+            <div class="feature-content">
+                <h3>Trust</h3>
+                <p>Customers from 500+ Indian cities and 50+ countries</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">
+                <img src="assets/economic.webp" alt="Economical">
+            </div>
+            <div class="feature-content">
+                <h3>Economical</h3>
+                <p>Free shipping above ₹1 and special discounts on all orders</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Information -->
+    <section class="safety-info advanced-safety">
+        <h2>Safety & Handling</h2>
+        <p class="safety-intro">ChemCart is committed to the highest standards of chemical safety. Please review the following guidelines before handling or ordering any chemicals. Always consult the product SDS for full details.</p>
+        <div class="safety-grid advanced-grid">
+            <div class="safety-card adv-card">
+                <img src="assets/hazard.png" alt="Hazard Codes">
+                <h4>Hazard Codes</h4>
+                <p><b>GHS/UN:</b> Check the product label and SDS for pictograms and hazard statements. Understand the risks before use.</p>
+            </div>
+            <div class="safety-card adv-card">
+                <img src="assets/Personal Protective Equipment (PPE).jpg" alt="PPE">
+                <h4>Personal Protective Equipment (PPE)</h4>
+                <p>Always wear lab coat, gloves, and safety goggles. Use a fume hood for volatile or hazardous chemicals.</p>
+            </div>
+            <div class="safety-card adv-card">
+                <img src="assets/storage.jpg" alt="Storage">
+                <h4>Storage</h4>
+                <p>Store chemicals in original containers, away from heat and incompatible substances. Follow SDS storage codes.</p>
+            </div>
+            <div class="safety-card adv-card">
+                <img src="assets/disposal.jpg" alt="Disposal">
+                <h4>Disposal</h4>
+                <p>Dispose of chemicals as per local regulations. Never pour hazardous chemicals down the drain. Use approved waste containers.</p>
+            </div>
+            <div class="safety-card adv-card">
+                <img src="assets/safety data sheet.jpg" alt="SDS">
+                <h4>Safety Data Sheets (SDS)</h4>
+                <p>Download and review the <a href="#" class="sds-link">SDS for each product</a> before use. Keep a printed copy in your lab.</p>
+            </div>
+        </div>
+        <div class="safety-callout">
+            <b>Emergency?</b> In case of exposure, fire, or spill, follow your institution's emergency procedures and contact local authorities immediately.
+        </div>
+    </section>
+
+    <!-- Custom Order Tool -->
+    <section class="custom-order official-order">
+        <h2>Custom Order Tool</h2>
+        <p class="order-subtitle">Need a specific chemical, custom formulation, or bulk quantity? Submit your requirements and our team will get back to you with a quote.</p>
+        <form class="official-order-form">
+            <div class="order-fields">
+                <label for="order-chemical">Chemical Name <span class="required">*</span>
+                    <input id="order-chemical" name="order-chemical" list="chemicals-list" type="text" placeholder="e.g. Sodium Chloride, Acetonitrile" required autocomplete="off">
+                    <datalist id="chemicals-list">
+                        <option value="Sodium Chloride">
+                        <option value="Acetic Acid">
+                        <option value="n-Hexane">
+                        <option value="Nutrient Agar">
+                        <option value="Ethanol">
+                        <option value="Silver Nitrate">
+                        <option value="EDTA">
+                        <option value="Educational Chemistry Kit">
+                    </datalist>
+                </label>
+                <label for="order-conc">Concentration / Purity
+                    <input id="order-conc" name="order-conc" list="conc-list" type="text" placeholder="e.g. 0.5M, 99.9%, 10% w/v" autocomplete="off">
+                    <datalist id="conc-list">
+                        <option value="0.5M">
+                        <option value="1M">
+                        <option value="99.9%">
+                        <option value="95%">
+                        <option value="10% w/v">
+                        <option value="AR Grade">
+                        <option value="LR Grade">
+                    </datalist>
+                </label>
+                <label for="order-qty">Quantity <span class="required">*</span>
+                    <input id="order-qty" name="order-qty" list="qty-list" type="text" placeholder="e.g. 500ml, 2kg, 10L" required autocomplete="off">
+                    <datalist id="qty-list">
+                        <option value="100ml">
+                        <option value="500ml">
+                        <option value="1L">
+                        <option value="5L">
+                        <option value="100g">
+                        <option value="500g">
+                        <option value="1kg">
+                    </datalist>
+                </label>
+                <label for="order-use">Intended Use / Application
+                    <input id="order-use" type="text" placeholder="e.g. HPLC, Synthesis, Teaching">
+                </label>
+                <label for="order-instructions">Special Instructions
+                    <input id="order-instructions" type="text" placeholder="e.g. Buffer pH 7.4, Custom packaging">
+                </label>
+            </div>
+            <div class="order-note">You can type or select from the suggestions in each field.</div>
+            <button type="submit" class="order-submit-btn">Request Quote <span style="font-size:1.2em;vertical-align:middle;">&#128179;</span></button>
+        </form>
+        <div class="order-callout">
+            <b>Note:</b> Orders for restricted chemicals may require a valid license or institutional authorization. Our team will guide you through the compliance process if needed.
+        </div>
+    </section>
+
+    <!-- User Panel (Mockup) -->
+    <section class="user-panel" id="user-panel">
+        <h2>User Panel</h2>
+        <p class="user-panel-subtitle">Access your orders, invoices, and more with a single click.</p>
+        <div class="user-features">
+            <button><span class="user-icon">📦</span> Order Tracking</button>
+            <button><span class="user-icon">🧾</span> Past Invoices</button>
+            <button><span class="user-icon">🔄</span> Reorder</button>
+            <button><span class="user-icon">🏷️</span> Labelling Services</button>
+        </div>
+        <div class="user-upload">
+            <label>Upload License/Authorization (if required)
+                <input type="file">
+            </label>
+        </div>
+    </section>
+
+    <!-- Regulatory Compliance -->
+    <section class="compliance advanced-compliance">
+        <h2>Regulatory Compliance</h2>
+        <p class="compliance-subtitle">ChemCart ensures all orders comply with national and international chemical regulations. Please review the requirements below before placing your order.</p>
+        <div class="compliance-grid">
+            <div class="compliance-card">
+                <span class="compliance-icon">📜</span>
+                <b>License for Restricted Chemicals</b>
+                <p>Certain chemicals require a valid government-issued license for purchase and use.</p>
+            </div>
+            <div class="compliance-card">
+                <span class="compliance-icon">🏢</span>
+                <b>Lab/Industry Authorization</b>
+                <p>Institutional or industrial buyers may need to upload proof of authorization or end-use certificate.</p>
+            </div>
+            <div class="compliance-card">
+                <span class="compliance-icon">🌐</span>
+                <b>Global & Local Regulations</b>
+                <p>We comply with all relevant Indian and international chemical safety and transport laws.</p>
+            </div>
+        </div>
+        <div class="compliance-callout">
+            <b>Note:</b> Orders for restricted chemicals will be processed only after all required documents are verified. Our compliance team will assist you at every step.
+        </div>
+    </section>
+
+    <!-- Why Choose ChemCart Section -->
+    <section class="why-choose">
+        <div class="why-left">
+            <h2>Why choose ChemCart?</h2>
+            <p>ChemCart offers a hassle-free chemical sourcing experience for everyone. Whether you need small or bulk quantities, our mission is to deliver high-quality chemicals online. With our consistency and seamless performance, we have become a trusted online chemical store for research, education, and industry. Leverage technology and save time and money by procuring chemicals directly from ChemCart!</p>
+            <div class="why-benefits">
+                <ul>
+                    <li>✔️ A to Z of chemicals</li>
+                    <li>✔️ Buy 1mg to 1 ton with ease</li>
+                    <li>✔️ Assured quality</li>
+                </ul>
+                <ul>
+                    <li>✔️ Choice of suppliers</li>
+                    <li>✔️ Delivered anywhere in India</li>
+                    <li>✔️ Strong customer support</li>
+                </ul>
+            </div>
+            <button class="quote-btn big">Get A Quote →</button>
+        </div>
+        <div class="why-right">
+            <!-- Placeholder for video or image -->
+            <img src="assets/video.jpg" alt="Why ChemCart Video" style="width:100%;height:260px;object-fit:cover;border-radius:12px;box-shadow:0 2px 12px #0002;">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 ChemCart – Your Online Chemical Store. All rights reserved.</p>
+            <p>For support: <a href="mailto:support@chemcart.com">support@chemcart.com</a></p>
+            <p>Developed by Harish Kumar</p>
+        </div>
+    </footer>
+
+    <script>
+    // Dropdown logic
+    const dropdowns = document.querySelectorAll('.nav-item.dropdown');
+    dropdowns.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            item.classList.add('open');
+        });
+        item.addEventListener('mouseleave', () => {
+            item.classList.remove('open');
+        });
+    });
+    // Search modal logic
+    const openSearch = document.getElementById('open-search');
+    const closeSearch = document.getElementById('close-search');
+    const searchModal = document.getElementById('search-modal');
+    openSearch.onclick = () => { searchModal.style.display = 'flex'; };
+    closeSearch.onclick = () => { searchModal.style.display = 'none'; };
+    window.onclick = function(event) {
+        if (event.target === searchModal) {
+            searchModal.style.display = 'none';
+        }
+    };
+    // Categories dropdown logic
+    const openCategories = document.getElementById('open-categories');
+    const categoriesMenu = document.getElementById('categories-menu');
+    openCategories.onclick = function(e) {
+        e.stopPropagation();
+        const expanded = openCategories.getAttribute('aria-expanded') === 'true';
+        openCategories.setAttribute('aria-expanded', !expanded);
+        categoriesMenu.style.display = expanded ? 'none' : 'block';
+    };
+    document.body.addEventListener('click', function() {
+        categoriesMenu.style.display = 'none';
+        openCategories.setAttribute('aria-expanded', 'false');
+    });
+    </script>
+</body>
+</html>
